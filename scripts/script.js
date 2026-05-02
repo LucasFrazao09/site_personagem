@@ -6,10 +6,10 @@ document.getElementById("toggle").onclick = () => {
     document.getElementById("titulo").innerText = cadastro 
     ? "Cadastro" 
     : "Login";
-    document.getElementById("button").innerText = cadastro 
+    document.getElementById("botao-envio").innerText = cadastro 
     ? "Cadastrar" 
     : "Entrar";
-    document.getElementById("toglge").innerText = cadastro ? 
+    document.getElementById("toggle").innerText = cadastro 
     ? "Já tem conta? Faça Login!"
     : "Não tem conta? Cadastre-se!";
     document.getElementById("mensagem").innerHTML = "";
@@ -26,11 +26,13 @@ document.getElementById("form-login").onsubmit = (e) => {
 
     if(!email.includes("@") || !email.includes(".")) {
         mensagem.innerHTML = "<div class = 'erro'><p> Email Inválido!</p></div>";
+        document.getElementById("form-login").reset();
         return;
     }
 
     if(senha.length < 4) {
         mensagem.innerHTML = "<div class = 'erro'><p> Senha muito curta!</p></div>";
+        document.getElementById("form-login").reset();
         return;
     }
 
@@ -39,11 +41,11 @@ document.getElementById("form-login").onsubmit = (e) => {
         mensagem.innerHTML = "<div class = 'sucesso'><p> Cadastrado com sucesso!</p></div>";
     } else {
         let salva = localStorage.getItem(email);
-        if (salva === senha); {
+        if (salva === senha) {
             mensagem.innerHTML = "<div class = 'sucesso'><p> Login com sucesso!</p></div>";
         } else {
             mensagem.innerHTML = "<div class = 'erro'><p>Dados incorretos.</p></div>";
         }
     }
-    document.getElementById("form-login").reset();
+    
 }
