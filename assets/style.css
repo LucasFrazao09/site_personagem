@@ -11,6 +11,13 @@
     background-position: center;  
 }
 
+#login-corpo {
+
+ background-image: url(img/fundo.pngs);
+     background-size: cover;
+    background-position: center; 
+
+}
 
 
 
