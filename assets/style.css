@@ -1,8 +1,31 @@
  #historia-origem {
      font-family: Arial, Helvetica, sans-serif;
-    background-image: url(img/fundo-historia.png);
+     background-image: url(img/fundo-historia.png);
+     background-size: cover;
+     background-position: center;
  }
 
+ #historia-titulo {
+     position: sticky;
+     text-align: center;
+     font-family: 'Playfair Display', serif;
+     color: #fabf34;
+     background: rgba(255, 255, 255, 0.274);
+     padding: 10px;
+     border-radius: 12px;
+     margin-left: 500px;
+     margin-right: 500px;
+     border-radius: 4px;
+
+
+ }
+
+ #texto-historia{
+    
+color: #F5F5F5
+;
+
+ }
 
  #home-corpo {
      background-image: url(img/unnamed.webp);
@@ -78,7 +101,7 @@
      text-align: center;
  }
 
-p {
+ p {
      margin: 0;
      color: #f7ab41;
  }
@@ -93,5 +116,5 @@ p {
      background: linear-gradient(135deg, #FFD166, #f7ab41);
      box-shadow: 0 0 12px rgba(255, 209, 102, 0.808);
      border: none;
-     
+
  }
