@@ -1,6 +1,6 @@
  #historia-origem {
      font-family: Arial, Helvetica, sans-serif;
-     background-image: url(img/fundo-historia.png);
+     background-image: url(img/fundi-hist.png);
      background-size: cover;
      background-position: center;
  }
@@ -10,21 +10,26 @@
      text-align: center;
      font-family: 'Playfair Display', serif;
      color: #fabf34;
-     background: rgba(255, 255, 255, 0.274);
+     background-color: rgba(255, 255, 255, 0.685);
      padding: 10px;
      border-radius: 12px;
      margin-left: 500px;
      margin-right: 500px;
      border-radius: 4px;
+     font-size: 35px;
 
 
  }
 
  #texto-historia{
     
-color: #F5F5F5;
+color: #5d0070;
 justify-content: center;
 text-align: center;
+background-color: rgba(255, 255, 255, 0.541);
+border-radius: 12px;
+padding: 10px;
+font-family: 'Playfair Display', serif; 
 
  }
 
